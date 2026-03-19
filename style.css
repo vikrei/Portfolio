@@ -1,34 +1,77 @@
+html {
+    scroll-behavior: smooth;
+}
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px 80px;
+    z-index: 10;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.nav-img {
+    width: 120px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.nav-img:hover {
+    transform: scale(1.05);
 }
 body {
-  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url("background.png") no-repeat top center;
+    background-size: 1920px auto;
+}
+section {
+    margin: 0;
 }
 .main {
-  height: 100vh;
-  background: url("bkg-1.PNG") no-repeat center center/cover;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 100px;
-  text-align: right;
-  color: white;
+    height: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    color: white;
 }
 .main h1 {
-  font-size: 60px;
-  margin-bottom: 10px;
+    font-size: 60px;
+    margin-bottom: 10px;
 }
 .main p {
-  font-size: 24px;
+    font-size: 24px;
 }
 .profile {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: auto;
-  margin-left: 150px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: 150px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+#about {
+    height: 1000px;
+    padding: 100px;
+    color: white;
+}
+#projects {
+    height: 1000px;
+    padding: 100px;
+    color: white;
 }
